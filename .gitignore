@@ -1,4 +1,5 @@
 __pycache__/*
+data.pth
 intents.json
 def_intents.json
 andrew_intents.json
