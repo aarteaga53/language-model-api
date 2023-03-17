@@ -20,7 +20,7 @@ def hello():
     return jsonify(message='Hello, World!')
 
 @app.route('/andrew', methods=['POST'])
-def chat():
+def andrew():
     req_data = request.get_json()
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
