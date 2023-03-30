@@ -65,7 +65,7 @@ def andrew():
     else:
         response = 'I do not understand...'
 
-    return jsonify({"sentence": response})
+    return jsonify({"sentence": response, "who": "bot"})
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -113,7 +113,7 @@ def chat():
     else:
         response = 'I do not understand...'
 
-    return jsonify({"sentence": response})
+    return jsonify({"sentence": response, "who": "bot"})
 
 if __name__ == '__main__':
     app.run()
